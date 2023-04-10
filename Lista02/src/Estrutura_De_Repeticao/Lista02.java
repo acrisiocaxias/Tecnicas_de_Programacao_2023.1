@@ -8,7 +8,7 @@ public class Lista02 {
 	}
 	
 	public static void Menu() {
-		System.out.println("Informe a questão que deseja execultar 1 a 10:");
+		System.out.println("Informe a questao que deseja execultar 1 a 10:");
 		Scanner ler = new Scanner(System.in);
 		int questao = ler.nextInt();
 		
@@ -52,25 +52,13 @@ public class Lista02 {
 			Questao10();
 			Menu();
 		}
-		if(questao == 11) {
-			Questao11();
-			Menu();
-		}
-		if(questao == 12) {
-			Questao12();
-			Menu();
-		}
-		if(questao == 13) {
-			Questao13();
-			Menu();
-		}
-
+		
 
 	}
 	
 //####################################################################
 	public static void Questao01() {
-        System.out.println("Os numeros pares entre 1 a 100 são :");
+        System.out.println("Os numeros pares entre 1 a 100 sao :");
 		for(int i=1;i<=101/2;i++) {
 			
 				System.out.println(i*2);
@@ -94,7 +82,7 @@ public class Lista02 {
 				
 			}else {
 				System.out.println("Parece que você inseriu um numero negativo !");
-				System.out.println("A soma dos números positivos inseridos é :"+soma);
+				System.out.println("A soma dos números positivos inseridos e :"+soma);
 				
 				
 				i = -1;
@@ -145,20 +133,5 @@ public class Lista02 {
 	// ####################################################################
 	public static void Questao10() {
 		
-	}
-
-	// ####################################################################
-	public static void Questao11() {
-		
-	}
-
-	// ####################################################################
-	public static void Questao12() {
-		
-	}
-
-	// ####################################################################
-	public static void Questao13() {
-
 	}
 }
