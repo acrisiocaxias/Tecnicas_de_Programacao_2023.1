@@ -98,19 +98,19 @@ public class Lista02 {
 	public static void Questao03() {
 		Scanner ler = new Scanner(System.in);
 		System.out.println("Adivinhe um numero entre 1 e 100 :");
-		int Numero = 20 ;
+		int numero = 20 ;
 	
 		for(int i =1;i>0;i++) {
-			int Cont = ler.nextInt();
+			int cont = ler.nextInt();
 			
-			if(Cont==Numero) {
+			if(cont==numero) {
 				System.out.println("Parabéns, você acertou o número ! ");
 				i = -1;
 			}else {
 				System.out.println("Parece que você inseriu um número diferente, tente novamente :");
-				if(Cont > Numero) {
+				if(cont > numero) {
 					System.out.println("O número a ser adivinhado é menor que o informado ! ");
-				}else if (Cont<Numero) {
+				}else if (cont<numero) {
 					System.out.println("O número a ser adivinhado é maior que o informado ! ");
 				}
 				}
@@ -127,14 +127,14 @@ public class Lista02 {
 
 		Scanner ler = new Scanner(System.in);
 		System.out.println("Informe um numero para construcao da tabela de multiplicação :");
-		int Algarismo = ler.nextInt();
+		int algarismo = ler.nextInt();
 		
-		int Cont =1 ;
+		int cont =1 ;
 		
 		int i =10;
-		while (Cont<11) {
-            System.out.println( Cont + " x "+ Algarismo+ " = "+ (Cont*Algarismo));
-            Cont++;
+		while (cont<11) {
+            System.out.println( cont + " x "+ algarismo+ " = "+ (cont*algarismo));
+            cont++;
         }
 	}
 
@@ -174,6 +174,25 @@ public class Lista02 {
 
 	// ####################################################################
 	public static void Questao10() {
-		
+		Scanner ler = new Scanner(System.in);
+		int nlinhas, ncolunas;
+		System.out.println("Informe o n�mero de linhas:");
+		nlinhas = ler.nextInt();
+
+		System.out.println("Informe o n�mero de colunas:");
+		ncolunas = ler.nextInt();
+
+		System.out.println("\n\n Forma do item A: ");
+		for (int i = 0; i < nlinhas; i++) {
+			for (int j = 0; j < ncolunas; j++) {
+
+				if (i >= j) {
+					System.out.print(" * ");
+				} else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
 	}
 }
