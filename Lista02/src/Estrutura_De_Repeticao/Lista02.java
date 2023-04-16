@@ -96,17 +96,59 @@ public class Lista02 {
 
 	// ####################################################################
 	public static void Questao03() {
+		Scanner ler = new Scanner(System.in);
+		System.out.println("Adivinhe um numero entre 1 e 100 :");
+		int Numero = 20 ;
+	
+		for(int i =1;i>0;i++) {
+			int Cont = ler.nextInt();
+			
+			if(Cont==Numero) {
+				System.out.println("Parabéns, você acertou o número ! ");
+				i = -1;
+			}else {
+				System.out.println("Parece que você inseriu um número diferente, tente novamente :");
+				if(Cont > Numero) {
+					System.out.println("O número a ser adivinhado é menor que o informado ! ");
+				}else if (Cont<Numero) {
+					System.out.println("O número a ser adivinhado é maior que o informado ! ");
+				}
+				}
+				
+				
+			}
+			
+		}
 
-	}
+	
 
 	// ####################################################################
 	public static void Questao04() {
+
+		Scanner ler = new Scanner(System.in);
+		System.out.println("Informe um numero para construcao da tabela de multiplicação :");
+		int Algarismo = ler.nextInt();
 		
+		int Cont =1 ;
+		
+		int i =10;
+		while (Cont<11) {
+            System.out.println( Cont + " x "+ Algarismo+ " = "+ (Cont*Algarismo));
+            Cont++;
+        }
 	}
 
 	// ####################################################################
 	public static void Questao05() {
-		
+		for (int i = 0; i < 4; i++) {
+			int x = 0;
+			for (int j = 0; j < 5; j++) {
+
+				System.out.println(i + " - " + j);
+
+				
+			}
+		}
 	}
 
 	// ####################################################################
